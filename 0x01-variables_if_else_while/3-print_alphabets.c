@@ -6,7 +6,7 @@
  * Return: function ends
  */
 
-int main (void)
+int main(void)
 {
 	char ch;
 
