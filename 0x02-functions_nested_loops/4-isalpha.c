@@ -11,10 +11,12 @@
 int _isalpha(int c)
 {
 	char d;
+	char e;
+	int c = '1'
 
-	if ((d = 'a'; d <= 'z'; d++) || (d = 'A'; d <= 'Z'; d++))
+	if ((d = 'a'; d <= 'z'; d++) || (e = 'A'; e <= 'Z'; e++))
 	{
-		putchar('1');
+		putchar(c);
 	}
 	else
 	{
