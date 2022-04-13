@@ -10,13 +10,15 @@
 
 int _isalpha(int c)
 {
-	if (isalpha(c) != 0)
+	char d;
+
+	if ((d = 'a'; d <= 'z'; d++) || (d = 'A'; d <= 'Z'; d++))
 	{
-		_putchar(c);
+		putchar('1');
 	}
 	else
 	{
-		_putchar(c);
+		putchar('0');
 	}
 	putchar('\n');
 	return (0);
