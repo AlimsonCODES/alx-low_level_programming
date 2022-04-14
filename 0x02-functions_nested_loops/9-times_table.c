@@ -10,24 +10,13 @@
 void times_table(void)
 {
 	char a;
+	char b;
 
-	for (a = 0; a <= 9; a++)
+	for (a = '0'; a <= '9'; a++)
 	{
-		a * 0;
-		_putchar(a);
-		if (a != 9)
-		{
-			_putchar(',');
-			_putchar(' ');
-		}
-	}
-	_putchar('\n');
-
-	for (a = 0; a <= 9; a++)
-	{
-		b = a * 1;
+		b = (a * 0);
 		_putchar(b);
-		if (a != 9)
+		if (a != '9')
 		{
 			_putchar(',');
 			_putchar(' ');
@@ -35,44 +24,11 @@ void times_table(void)
 	}
 	_putchar('\n');
 
-	for (a = 0; a<= 9; a++)
+	for (a = '0'; a <= '9'; a++)
 	{
-		b = a * 2;
+		b = (a * 1);
 		_putchar(b);
-		if (a != 9)
-		{
-			_putchar(',');
-			_putchar(' ');
-		}
-	}
-	_putchar('\n');
-	for (a = 0; a <= 9; a++)
-	{
-		b = a * 3;
-		_putchar(b);
-		if (a != 9)
-		{
-			_putchar(',');
-			_putchar(' ');
-		}
-	}
-	_putchar('\n');
-	for (a = 0; a <= 9; a++)
-	{
-		b = a * 4;
-		_putchar(b);
-		if (a != 9)
-		{
-			_putchar(',');
-			_putchar(' ');
-		}
-	}
-	_putchar('\n');
-	for (a = 0; a <= 9; a++)
-	{
-		b = a * 5;
-		_putchar(b);
-		if (a != 9)
+		if (a != '9')
 		{
 			_putchar(',');
 			_putchar(' ');
@@ -80,44 +36,89 @@ void times_table(void)
 	}
 	_putchar('\n');
 
-	for (a = 0; a <= 9; a++)
+	for (a = '0'; a<= '9'; a++)
 	{
-		b = a * 6;
+		b = (a * 2);
 		_putchar(b);
-		if (a != 9)
+		if (a != '9')
 		{
 			_putchar(',');
 			_putchar(' ');
 		}
 	}
 	_putchar('\n');
-	for (a = 0; a <= 9; a++)
+	for (a = '0'; a <= '9'; a++)
 	{
-		b = a * 7;
+		b = (a * 3);
 		_putchar(b);
-		if (a != 9)
+		if (a != '9')
 		{
 			_putchar(',');
 			_putchar(' ');
 		}
 	}
 	_putchar('\n');
-	for (a = 0; a <= 9; a++)
+	for (a = '0'; a <= '9'; a++)
 	{
-		b = a * 8;
+		b = (a * 4);
 		_putchar(b);
-		if (a != 9)
+		if (a != '9')
 		{
 			_putchar(',');
 			_putchar(' ');
 		}
 	}
 	_putchar('\n');
-	for (a = 0; a <= 9; a++)
+	for (a = '0'; a <= '9'; a++)
 	{
-		b = a * 9;
+		b = (a * 5);
 		_putchar(b);
-		if (a !=9)
+		if (a != '9)'
+		{
+			_putchar(',');
+			_putchar(' ');
+		}
+	}
+	_putchar('\n');
+
+	for (a = '0'; a <= '9'; a++)
+	{
+		b = (a * 6);
+		_putchar(b);
+		if (a != '9')
+		{
+			_putchar(',');
+			_putchar(' ');
+		}
+	}
+	_putchar('\n');
+	for (a = '0'; a <= '9'; a++)
+	{
+		b = (a * 7);
+		_putchar(b);
+		if (a != '9')
+		{
+			_putchar(',');
+			_putchar(' ');
+		}
+	}
+	_putchar('\n');
+	for (a = '0'; a <= '9'; a++)
+	{
+		b = (a * 8);
+		_putchar(b);
+		if (a != '9')
+		{
+			_putchar(',');
+			_putchar(' ');
+		}
+	}
+	_putchar('\n');
+	for (a = '0'; a <= '9'; a++)
+	{
+		b = (a * 9);
+		_putchar(b);
+		if (a != '9')
 		{
 			_putchar(',');
 			_putchar(' ');
