@@ -1,128 +1,45 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * times_table - prints 9 times table
+ * void times_table - prints 9 times table
  *
- * Return: 0 (success)
+ * Return: 0
  */
 
 void times_table(void)
 {
-	char a;
-	char b;
+	int i, j, mul;
 
-	for (a = '0'; a <= '9'; a++)
+	for (i = 0; i <= 9; i++)
 	{
-		b = (a * 0);
-		_putchar(b);
-		if (a != '9')
+		for ( j = 0; j <= 9; j++)
 		{
-			_putchar(',');
-			_putchar(' ');
+			mul = i * j;
+			if ((j == 0) && (mul / 10 == 0))
+			{
+				_putchar(mul % 10 + '0');
+			}
+			else if ((i == 0) && (j > 0))
+			{
+				_putchar(' ');
+				_putchar(mul % 10 +'0'0);
+			}
+			else if ((mul / 10 == 0) && (mul % 10 != 0))
+			{
+				_putchar(' ');
+				_putchar(mul % 10 + '0');
+			}
+			else
+			{
+				_putchar(mul / 10 + '0');
+				_putchar(mul % 10 + '0');
+			}
+			
+			if (j != 9)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
 		}
 	}
-	_putchar('\n');
-
-	for (a = '0'; a <= '9'; a++)
-	{
-		b = (a * 1);
-		_putchar(b);
-		if (a != '9')
-		{
-			_putchar(',');
-			_putchar(' ');
-		}
-	}
-	_putchar('\n');
-
-	for (a = '0'; a<= '9'; a++)
-	{
-		b = (a * 2);
-		_putchar(b);
-		if (a != '9')
-		{
-			_putchar(',');
-			_putchar(' ');
-		}
-	}
-	_putchar('\n');
-	for (a = '0'; a <= '9'; a++)
-	{
-		b = (a * 3);
-		_putchar(b);
-		if (a != '9')
-		{
-			_putchar(',');
-			_putchar(' ');
-		}
-	}
-	_putchar('\n');
-	for (a = '0'; a <= '9'; a++)
-	{
-		b = (a * 4);
-		_putchar(b);
-		if (a != '9')
-		{
-			_putchar(',');
-			_putchar(' ');
-		}
-	}
-	_putchar('\n');
-	for (a = '0'; a <= '9'; a++)
-	{
-		b = (a * 5);
-		_putchar(b);
-		if (a != '9')
-		{
-			_putchar(',');
-			_putchar(' ');
-		}
-	}
-	_putchar('\n');
-
-	for (a = '0'; a <= '9'; a++)
-	{
-		b = (a * 6);
-		_putchar(b);
-		if (a != '9')
-		{
-			_putchar(',');
-			_putchar(' ');
-		}
-	}
-	_putchar('\n');
-	for (a = '0'; a <= '9'; a++)
-	{
-		b = (a * 7);
-		_putchar(b);
-		if (a != '9')
-		{
-			_putchar(',');
-			_putchar(' ');
-		}
-	}
-	_putchar('\n');
-	for (a = '0'; a <= '9'; a++)
-	{
-		b = (a * 8);
-		_putchar(b);
-		if (a != '9')
-		{
-			_putchar(',');
-			_putchar(' ');
-		}
-	}
-	_putchar('\n');
-	for (a = '0'; a <= '9'; a++)
-	{
-		b = (a * 9);
-		_putchar(b);
-		if (a != '9')
-		{
-			_putchar(',');
-			_putchar(' ');
-		}
-	}
-	_putchar('\n');
 }
