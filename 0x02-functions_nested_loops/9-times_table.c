@@ -73,7 +73,7 @@ void times_table(void)
 	{
 		b = (a * 5);
 		_putchar(b);
-		if (a != '9)'
+		if (a != '9')
 		{
 			_putchar(',');
 			_putchar(' ');
