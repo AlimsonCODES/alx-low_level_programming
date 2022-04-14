@@ -3,17 +3,17 @@
 
 /**
  * _isalpha.c - function that checks for alphabetic character
- *
+ *@c: contains value to be compared
  * Return: 0 || 1 (success)
  */
 
 int _isalpha(int c)
 {
-	char d;
-	char e;
-
-	if (d = 'a'; d <= 'z'; d++ || e = 'A'; e <= 'Z'; e++)
-		return (1);
-	else
-		return (0);
+if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+{
+return (1);
+}
+else
+{
+return (0);
 }
