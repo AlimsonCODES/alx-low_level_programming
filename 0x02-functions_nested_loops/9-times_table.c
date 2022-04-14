@@ -9,13 +9,12 @@
 
 void times_table(void)
 {
-	int a;
-	int b;
+	char a;
 
 	for (a = 0; a <= 9; a++)
 	{
-		b = a * 0;
-		_putchar(b);
+		a * 0;
+		_putchar(a);
 		if (a != 9)
 		{
 			_putchar(',');
@@ -47,7 +46,6 @@ void times_table(void)
 		}
 	}
 	_putchar('\n');
-
 	for (a = 0; a <= 9; a++)
 	{
 		b = a * 3;
@@ -59,7 +57,6 @@ void times_table(void)
 		}
 	}
 	_putchar('\n');
-
 	for (a = 0; a <= 9; a++)
 	{
 		b = a * 4;
@@ -71,7 +68,6 @@ void times_table(void)
 		}
 	}
 	_putchar('\n');
-
 	for (a = 0; a <= 9; a++)
 	{
 		b = a * 5;
@@ -95,7 +91,6 @@ void times_table(void)
 		}
 	}
 	_putchar('\n');
-
 	for (a = 0; a <= 9; a++)
 	{
 		b = a * 7;
@@ -107,7 +102,6 @@ void times_table(void)
 		}
 	}
 	_putchar('\n');
-
 	for (a = 0; a <= 9; a++)
 	{
 		b = a * 8;
@@ -119,7 +113,6 @@ void times_table(void)
 		}
 	}
 	_putchar('\n');
-
 	for (a = 0; a <= 9; a++)
 	{
 		b = a * 9;
