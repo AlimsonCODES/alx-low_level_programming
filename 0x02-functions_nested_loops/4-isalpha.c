@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _isalpha.c - function that checks for alphabetic character
+ * _isalpha - function that checks for alphabetic character
  *@c: contains value to be compared
  * Return: 0 || 1 (success)
  */
