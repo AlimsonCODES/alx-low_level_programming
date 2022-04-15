@@ -17,4 +17,5 @@ int main(void)
 		if (i == 48)
 			printf("%ld\n", x);
 	}
+	return (0);
 }
