@@ -2,8 +2,7 @@
 
 /**
  * print_numbers - prints 0 through to 9
- * 
- * 
+ *  
  */
 
 void print_numbers(void)
