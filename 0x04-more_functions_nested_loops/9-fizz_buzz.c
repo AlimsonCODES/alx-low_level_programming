@@ -1,5 +1,5 @@
-#include <stdio.h>
 #include "main.h"
+#include <stdio.h>
 
 /**
  * main - prints fizz buzz
@@ -11,7 +11,7 @@ int main(void)
 {
 	int n;
 
-	for (n = 0; n <= 100; n++)
+	for (n = 1; n <= 100; n++)
 	{
 		if (n % 3 == 0 && n % 5 != 0)
 		{
@@ -34,6 +34,6 @@ int main(void)
 			printf(" %d", n);
 		}
 	}
-
-
+	printf("\n");
+	return (0);
 }
