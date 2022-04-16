@@ -5,7 +5,7 @@
  * @n: size of the square
  */
 
-void print_square(int size)
+void print_square(int n)
 {
 if (n > 0)
 {
