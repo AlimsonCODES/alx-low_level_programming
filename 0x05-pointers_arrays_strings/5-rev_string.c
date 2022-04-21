@@ -6,7 +6,7 @@
  * @s: the stri
  */
 
-void print_rev(char *s)
+void rev_string(char *s)
 {
 	int len, a, b;
 	char v1, v2;
