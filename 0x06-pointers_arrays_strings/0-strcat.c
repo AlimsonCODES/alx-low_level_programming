@@ -10,8 +10,6 @@
 
 char *_strcat(char *dest, char *src)
 {
-	char *ptr;
-
-	ptr = _strcat(*dest *src);
-	return (ptr);
+	strcat(*dest *src);
+	return (dest);
 }
