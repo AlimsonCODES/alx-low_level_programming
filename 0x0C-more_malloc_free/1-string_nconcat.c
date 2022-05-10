@@ -1,47 +1,44 @@
 #include "main.h"
 #include <stdlib.h>
 
-char *_memset(char *s, char b, unsigned int n);
-
 /**
- * _calloc - allocate arr
- * @nmemb: param
- * @size: param
- * Return: void pointer
+ * string_nconcat - concats str
+ * @s1: first param
+ * @s2: second param
+ * @n: third param
+ * Return: char
  */
 
-void *_calloc(unsigned int nmemb, unsigned int size)
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	void *p;
+	char *str;
+	unsigned int i, j, k;
 
-	if (nmemb == 0 || size == 0)
-		return (NULL);
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 
-	p = malloc(nmemb * size);
+	for (i = 0; s1[i] != '\0'; i++)
+		;
+	for (j = 0; s2[j] != '\0'; j++)
+		;
+	if (n > j)
+		n = j;
 
-	if (p == NULL)
-		return (NULL);
+	str = malloc(sizeof(char) * (i + n + 1));
 
-/*NB memeset was created on prev project/task*/
-	_memset(p, 0, (nmemb * size));
-	return (p);
-}
-
-/**
- * _memset - sets memeory
- * @s: pointer params
- * @b: params
- * @n: parms
- * Return: pointer
- */
-
-char *_memset(char *s, char b, unsigned int n)
-{
-	unsigned int i;
-
-	for (i = 0; i < n; i++)
+	if (str == NULL)
 	{
-		s[i] = b;
+		return (0);
 	}
-	return (s);
+
+	for (k = 0; k < i; k++)
+		str[k] = s1[k];
+	for (; k < (i + n); k++)
+	{
+		str[k] = s2[k - i];
+	}
+	str[k] = '\0';
+	return (str);
 }
