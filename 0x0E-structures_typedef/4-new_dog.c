@@ -35,7 +35,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 	(*bingo).name = n_name;
+
 	(*bingo).age = age;
+
 	n_owner = _copy(owner);
 	if (n_owner == NULL)
 	{
@@ -68,7 +70,7 @@ char *_copy(char *src)
 		;
 
 	ptr = malloc(sizeof(char) * (len + 1));
-	
+
 	if (ptr == NULL)
 	{
 		return (NULL);
@@ -78,7 +80,7 @@ char *_copy(char *src)
 	{
 		ptr[i] = src[i];
 	}
-	
+
 	ptr[i] = '\0';
 	return (ptr);
 }
