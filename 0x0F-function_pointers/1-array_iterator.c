@@ -3,7 +3,7 @@
 /**
  * array_iterator - exe funct param in arr
  * @array: param pointer
- * @size: param 
+ * @size: param
  * @action: funct param
  */
 
