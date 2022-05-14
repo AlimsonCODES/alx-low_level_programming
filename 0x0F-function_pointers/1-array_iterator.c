@@ -1,7 +1,7 @@
 #include "function_pointers.h"
 
 /**
- * array_iterator - exe funct param in arr *
+ * array_iterator - exe funct param in arr
  * @array: param pointer
  * @size: param 
  * @action: funct param
