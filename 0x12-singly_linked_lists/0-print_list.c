@@ -1,4 +1,4 @@
-#include "main.h"
+#include "lists.h"
 
 /**
  * print_list - prints parameters
@@ -22,4 +22,3 @@ size_t print_list(const list_t *h)
 	}
 	return (nodelen);
 }
-
