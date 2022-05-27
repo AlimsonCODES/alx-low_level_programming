@@ -20,7 +20,7 @@ else
 printf("[%d] %s\n", h->len, h->str);
 }
 h = h->next;
-nodelen++;
+node_len++;
 }
-return (nodelen);
+return (node_len);
 }
