@@ -10,6 +10,7 @@ unsigned int binary_to_uint(const char *b)
 {
 unsigned int ans = 0;
 int base_len, base_two;
+
 if (!b)
 return (0);
 
