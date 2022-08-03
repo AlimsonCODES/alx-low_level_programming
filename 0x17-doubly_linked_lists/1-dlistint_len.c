@@ -3,7 +3,7 @@
 /**
  * dlistint_len - check how many nodes
  * @h: pointer to head
- * Return: len
+ * Return: length
  */
 
 size_t dlistint_len(const dlistint_t *h)
@@ -22,5 +22,6 @@ size_t dlistint_len(const dlistint_t *h)
 		len++;
 		h = h->next;
 	}
+
 	return (len);
 }
