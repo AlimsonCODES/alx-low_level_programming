@@ -30,8 +30,8 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 	}
 	if (index > len)
 		return (NULL);
-	temp = h;
 
+	temp = head;
 	while (index != len)
 	{
 		temp = temp->next;
