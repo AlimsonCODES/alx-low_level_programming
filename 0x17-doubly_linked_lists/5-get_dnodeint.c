@@ -3,12 +3,13 @@
 /**
  * *get_dnodeint_at_index - gets a nth node
  * @head: headof list
+ * @index: nth node
  * Return: nth node
  */
 
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
-	dlistint_t *temp, *h;
+	dlistint_t *temp;
 	unsigned int len;
 
 	len = 0;
@@ -16,14 +17,16 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 		return NULL;
 	
 	temp = head;
+	if (temp == NULL)
+		return NULL;
 	while (temp->prev != NULL)
 		temp = temp->prev;
-	h = temp;
+	head = temp;
 
 	while (temp->next != NULL)
 	{
-		temp = temp->next;
 		len++;
+		temp = temp->next;
 	}
 	if (index > len)
 		return NULL;
